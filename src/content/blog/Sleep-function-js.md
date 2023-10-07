@@ -5,6 +5,7 @@ pubDate: 'Oct 07 2023'
 heroImage: '/sleep-function-js.jpeg'
 ---
 
+
 In JavaScript, you can create a sleep function using the setTimeout function. This function allows you to delay the execution of a piece of code for a specified amount of time. Here's an example of how you can create a sleep function:
 
 <br />
