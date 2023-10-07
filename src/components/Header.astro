@@ -2,14 +2,16 @@
 import { SITE_TITLE } from "../consts";
 ---
 
-<header class="backdrop-blur-sm bg-white/80 z-50 sticky top-0">
+<header
+	class="backdrop-blur-sm bg-white/80 dark:bg-black/80 dark:text-white z-50 sticky top-0"
+>
 	<nav
-		class="flex text-lg justify-between items-center px-5 md:px-0 py-5 border-b font-bold"
+		class="flex text-lg justify-between items-center px-5 md:px-0 py-5 border-b dark:border-slate-800 font-light"
 	>
 		<ul>
 			<li>
 				<a class="flex gap-3 items-center" href="/">
-					<img class="h-8 w-8 rounded-full" src="/logo.svg" alt="" />
+					<i class="text-2xl bi bi-code-slash"></i>
 					 ACHOUR.DART
 				</a>
 			</li>

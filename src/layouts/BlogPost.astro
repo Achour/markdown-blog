@@ -15,14 +15,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<BaseHead title={title} description={description} />
 	</head>
 
-	<body>
+	<body class="dark:bg-neutral-950">
 		<div class="container lg:w-1/2">
 			<Header />
 			<div class="border-b px-5 md:px-0">
 				<div class="my-3">
-					<h1 class="text-5xl font-bold">{title}</h1>
+					<h1 class="text-5xl font-bold dark:text-slate-100">
+						{title}
+					</h1>
 
-					<p class="text-sm text-gray-900">
+					<p class="text-sm text-gray-900 dark:text-slate-400">
 						By Achour Meguenni / <FormattedDate date={pubDate} />
 					</p>
 				</div>
@@ -37,7 +39,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						/>
 					)
 				}
-				<div class="my-5">
+				<div class="my-5 dark:text-slate-100">
 					<slot />
 				</div>
 			</div>

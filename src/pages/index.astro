@@ -16,22 +16,25 @@ const posts = (await getCollection("blog")).sort(
     <div class="px-5 md:px-0 flex flex-col gap-5">
         {
             posts.map((post) => (
-                <div class="border-b ">
+                <div class="border-b dark:border-slate-800 ">
                     <div class="flex justify-between my-3">
-                        <a href="/" class="p-1 rounded text-sm bg-blue-100">
+                        <a
+                            href="/"
+                            class="p-1 rounded text-sm bg-blue-100 dark:bg-indigo-950 dark:text-slate-300"
+                        >
                             Article
                         </a>
-                        <p class="text-sm text-gray-900">
+                        <p class="text-sm text-gray-900 dark:text-gray-200">
                             <FormattedDate date={post.data.pubDate} />
                         </p>
                     </div>
                     <div>
                         <a href={`/blog/${post.slug}/`}>
-                            <h1 class="text-3xl font-bold">
+                            <h1 class="text-3xl font-bold dark:text-slate-100">
                                 {post.data.title}
                             </h1>
 
-                            <p class="text-slate-500">
+                            <p class="text-slate-500 dark:text-slate-400">
                                 {post.data.description}
                             </p>
                         </a>
@@ -43,9 +46,14 @@ const posts = (await getCollection("blog")).sort(
                                 src="https://avatars.githubusercontent.com/u/2856254?v=4"
                                 alt=""
                             />
-                            <p class="font-semibold">Achour Meguenni</p>
+                            <p class="font-semibold dark:text-slate-100">
+                                Achour Meguenni
+                            </p>
                         </div>
-                        <a href={`/blog/${post.slug}/`} class="text-indigo-600">
+                        <a
+                            href={`/blog/${post.slug}/`}
+                            class="text-indigo-600 dark:text-indigo-300"
+                        >
                             Read more <i class="bi bi-arrow-right" />
                         </a>
                     </div>
