@@ -1,0 +1,26 @@
+---
+import Header from "../components/Header.astro";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import RootLayout from "../layouts/RootLayout.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body class="bg-slate-950 text-slate-100">
+        <div class="h-screen flex flex-col justify-center items-center">
+            <h1>404</h1>
+            <h2>Page Not Found</h2>
+            <a href="/">
+                <button
+                    class="bg-indigo py-4 px-6 bg-indigo-700 rounded-full my-5 text-xl"
+                    >Return Home</button
+                >
+            </a>
+        </div>
+    </body>
+</html>
