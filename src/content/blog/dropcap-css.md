@@ -45,13 +45,6 @@ Result:
 <br>
 
 <br>
-        <style>
-            .dropcap::first-letter {
-                color: red;
-                initial-letter: 3 3;
-                padding: 0px 10px;
-            }
-        </style>
-            <p class="dropcap">
-Doluptate vulputate, leo feugiat eu a malesuada ligula, vestibulum tempus accumsan. Facilis quidem aliquid purus egestas sit imperdiet? Aliquet? Mauris mattis doloremque cursus sagittis. Eiusmod, mus vehicula blanditiis eius distinctio modi ad? Dicta, consequuntur varius sint, massa magnis fuga ipsa, voluptatum egestas eleifend arcu integer. Praesentium rutrum malesuada! Ante tristique tempora qui, quasi proin, omnis taciti ac, nullam integer dolores.
-            </p>
+
+
+![dropcap](/dropcap-screenshot.png "Dropcap")
